@@ -11,9 +11,9 @@ def generate_password():
     symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
     # Generate random lengths for letters, symbols, and numbers
-    nr_letters = random.randint(1, 8)
-    nr_symbols = random.randint(1, 3)
-    nr_numbers = random.randint(1, 3)
+    nr_letters = random.randint(8, 10)
+    nr_symbols = random.randint(2, 4)
+    nr_numbers = random.randint(3, 5)
 
     # Select random characters from each category
     password_letters = random.sample(letters, nr_letters)
