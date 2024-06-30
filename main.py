@@ -30,18 +30,13 @@ def save_data():
     website = website_entry.get()
     username = username_entry.get()
     password = password_entry.get()
-
     data = f"Website : {website}, Username/Email: {username}, Password: {password}\n"
 
     with open("data.txt", "a") as file:
         file.write(data)
         website_entry.delete(0, END)
         username_entry.delete(0, END)
-        password_entry.delete(0,END)
-
-
-
-
+        password_entry.delete(0, END)
 
 
 # Buttons
